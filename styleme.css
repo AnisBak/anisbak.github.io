@@ -2,6 +2,7 @@ h2,h1{
     color: skyblue ;
 
 }
+
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background:rgb(114, 93, 42);
@@ -14,11 +15,36 @@ strong{
 }
 a{
     color: red;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
 }
 .delta{
     font-family:cursive;
     font-size: large;
     font-weight:lighter;
+}
+p::first-letter{
+   font-size: 1.5em;
 
+}
+dt{
+    color: greenyellow;
+    font-size: smaller;
     
 }
+dd{
+    font-size: smaller;
+}
+ol{
+    transform: rotate(-180deg);
+    margin-left: 50px;
+}
+ol li{
+    transform: rotate(180deg);
+}
+
+
+
