@@ -1,0 +1,24 @@
+h2,h1{
+    color: skyblue ;
+
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background:rgb(114, 93, 42);
+    color: white;
+
+}
+strong{
+    color: Yellow;
+    font-style: italic;
+}
+a{
+    color: red;
+}
+.delta{
+    font-family:cursive;
+    font-size: large;
+    font-weight:lighter;
+
+    
+}
