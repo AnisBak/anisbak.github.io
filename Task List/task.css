@@ -1,0 +1,37 @@
+#container{
+    border: solid 4px blue;
+    width:40%;
+}
+.col{
+    float: left;
+    width: 50%;
+    margin-bottom: 14pt;
+}
+h2{
+    color:blue;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+#container:after {
+    content: "";
+    display: block;
+    clear: left;
+  }
+p{
+    padding: 0;
+    margin: 0;
+    
+}
+.row{
+    padding-left: 15pt;
+}
+button{
+    width: 90%;
+    margin-bottom: 8pt;
+    padding: 0;
+}
+input{
+    width: 90%;
+    margin-bottom: 8pt;
+    padding: 0;
+}

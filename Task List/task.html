@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <title>Task List</title>
+    <script>
+        function addTask() {
+        let textarea =document.getElementById("tasks").value;
+        if(textarea !== ""){
+            localStorage.setItem("textarea", textarea +"\n"+ document.getElementById("task").value);
+            document.getElementById("tasks").value = localStorage.getItem("textarea");
+        }
+        else{
+            localStorage.setItem("textarea", document.getElementById("task").value);
+            document.getElementById("tasks").value = localStorage.getItem("textarea");
+
+        }
+        }
+
+        function clearTasks() {
+            localStorage.removeItem("textarea");
+            document.getElementById("tasks").value= "";
+        }
+        
+        </script>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <h2>Task List</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+            
+                <p>Task</p>
+                <input type="text" id="task"><br>
+                <button onclick="addTask();"> Add Task</button><br>
+                <button onclick="clearTasks();"> Clear Tasks</button>
+            </div>
+            <div class="col"> 
+                <p>Task List</p>
+                <textarea name="" id="tasks" cols="45" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
