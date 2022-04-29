@@ -11,7 +11,7 @@ function calcTip() {
 const subtotalElement = document.getElementById("subtotal");
 const tipElement = document.getElementById("tip");
 const subtotal = subtotalElement.value;
-const tip = subtotalElement.value;
+const tip = tipElement.value;
 const total = subtotal *tip / 100;
 document.getElementById("total").innerHTML = "$" + total.toFixed(2) ;
 
