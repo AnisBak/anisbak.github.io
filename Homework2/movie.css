@@ -1,0 +1,127 @@
+#banner{
+    text-align: center;
+    background-image: url('bannerbg.png');
+}
+
+body{
+    background-image: url('background.png');
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8 pt;
+    margin: 0px;
+    padding:0px;
+}
+h1{
+    text-align: center;
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px  #999999;
+}
+
+#overrall{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px gray;
+    border-radius: 20px;
+    height: 1000px;
+    background-color: #A2B964 ;
+    
+}
+#percentage{
+    position: relative;
+    bottom: 0.2em;
+}
+#leftsection{
+    max-width: 550px;
+    column-count: 2;
+    column-gap: 2%;
+    height:840px;
+    background-image: url('background.png')
+}
+
+#topsection{
+    max-width: 550px;
+    background-image: url('rbg.png');
+    max-height: 83px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    border-top-left-radius: 15px;
+    
+}
+#topsection img{
+    border-top-left-radius: 15px;
+}
+p.review{
+    font-size: 8pt;
+    border: solid 2px gray;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #E8DC9B;
+    overflow: hidden;
+    font-weight: bold;
+    width: 90%;
+    margin-bottom: 7pt;
+
+}
+p.review img{
+    margin-right: 5px;
+    float: left;
+}
+p{
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+}
+p.reviewer{
+    margin-top: 0px;
+    margin-bottom: 20pt;
+    font-size: 8pt;
+    width: 250px;
+}
+p.reviewer img{
+   float: left;
+   margin-right: 5px; 
+}
+#overview{
+    border-top-right-radius: 15px;
+    
+}
+#rightsection{
+    max-width: 250px;
+    height:920px;
+    float: right;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    background-color: #A2B964; 
+    border-top-right-radius: 15px;
+    
+}
+#rightsection dl{
+    padding-left: 10pt;
+    
+}
+dl dt{
+    font-weight: bold;
+    margin-top: 10pt;
+    padding-top: 0;
+}
+#footer{
+    background-color: #A2B964;
+    text-align: center;
+    width:50%;
+    padding: 5px;
+    margin-right: 25%;
+    margin-left: 25%;
+
+
+}
+#validator{
+    text-align: right;
+    position: relative;
+    bottom: 4em;
+    left: 100em;
+    opacity: 50%;
+    width: 15%;
+}

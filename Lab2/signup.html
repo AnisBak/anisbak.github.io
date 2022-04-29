@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Dating</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="http://mumstudents.org/params.php">
+          <h3>New user Signup:</h4>
+        <div class="row">
+          <div class="col1">
+            <label>Name:</label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="firstname" size="16" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label>Gender:</label>
+          </div>
+          <div class="col2">
+            <label>
+            <input type="radio"  name="gender" > Male
+            <input type="radio"  name="gender" checked > Female
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label >Age</label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="age" size="6" maxlength="2" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label >Personality Type:</label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="type" size="6" maxlength="4" >
+          </div>
+          <div class="col2">
+            <label><a href="">(Don't know yet?)</a></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label >Favorite OS:</label>
+          </div>
+          <div class="col2">
+            <select  name="os">
+              <option value="windows">Windows</option>
+              <option value="linux">Linux</option>
+              <option value="macos">Mac</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label>Seeking age:</label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="age2" size="6" maxlength="2" placeholder="min" >
+          </div>
+          <div class="col2">
+            <label>To:</label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="age2" size="6" maxlength="2" placeholder="max" >
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
+      
+</body>
+</html>
