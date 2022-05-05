@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ascii.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="animations.js" type="text/javascript"></script>
+    <script src="ascii.js" type="text/javascript"></script>
+    <title>ASCII Animation</title>
+</head>
+
+<body>
+    <script>
+        var option;
+        var size;
+        var speed = 250;
+        $(document).ready(function () {
+            var textValue = "";
+            var id, id2;
+            option = $("#selec").val();
+
+            $("#start").click(function () {
+                $("#animation").val("");
+                let txt = ANIMATIONS[option].split("=====\n");
+                var xCnt = -1;
+                id = window.setInterval(function animateOneByOne() {
+                    
+                    xCnt += 1;
+                    if (xCnt < txt.length) {
+                        $("#animation")
+                            .val("")
+                            .val(txt[xCnt])
+                            .animateOneByOne();
+                    }
+                    else
+                        xCnt = -1
+                }, speed);
+                animateOneByOne();
+            }
+            );
+            $("#stop").click(function () {
+                window.clearInterval(id);
+                $("#animation").val(textValue);
+            });
+
+            $("#animation").on("keyup keydown paste", function () {
+                textValue = $(this).val();
+            });
+            $("#selec").on("change", function () {
+                option = $(this).val();
+            });
+            $("#size").on("change", function () {
+                size = $(this).val();
+                $("#animation").css("font-size", size);
+            });
+            $("#speed").click(function () {
+                if ($(this).is(':checked')) {
+                    // Do stuff
+                    alert("sssssssss");
+                    speed = 50;
+                }
+                else {
+                    speed = 250;
+                }
+
+            });
+
+
+        });
+    </script>
+    <div>
+        <div id="header">CS472: ASCII Animation Viewer</div>
+        <div> <textarea id="animation" name="" cols="80" rows="20"></textarea></div>
+        <div id="controls">
+            <fieldset>
+                <legend>Play Controls:</legend>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation:</legend>
+                <select name="" id="selec">
+                    <option value="BLANK" selected>BLANK</option>
+                    <option value="BIKE">BIKE</option>
+                    <option value="DIVE">DIVE</option>
+                    <option value="JUGGLER">JUGGLER</option>
+                    <option value="EXERCISE">EXERCISE</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <select name="" id="size">
+                    <option value="7pt">Tiny</option>
+                    <option value="12pt">Medium</option>
+                    <option value="16pt"> Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed:</legend>
+                <label for=""><input type="checkbox" id="speed"> Turbo</label>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
