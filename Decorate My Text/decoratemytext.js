@@ -12,19 +12,19 @@ function largerText() {
     var size = parseFloat(style.getPropertyValue("font-size"));
     size = 3 / 4 * size;
     size += 2;
-    textarea.style.fontSize = size+"pt";
+    textarea.style.fontSize = size + "pt";
 
 }
 let timer = null;
 function largerTextTimer() {
-    
+
     if (timer === null) {
         timer = setInterval(largerText, 500);
     } else {
         clearInterval(timer);
         timer = null;
     }
-  
+
 
 }
 function styletext() {

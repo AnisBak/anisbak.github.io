@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retrieve Grade</title>
 </head>
+
 <body>
     <h1>Retrieve your grade</h1>
-          
+
     <form action="http://mumstudents.org/params.php">
         <p>Student's name <input type="text" name="name"></p>
         <p>Student's ID <input type="text" name="ID"></p>
@@ -17,19 +19,20 @@
             <option>assignement2</option>
             <option>assignement3</option>
             <option>assignement4</option>
-            </select>
+        </select>
         <fieldset>
             <legend>Entry:</legend>
             <input type="radio" name="entry" value="febuary" checked="checked" /> Febuary
             <input type="radio" name="entry" value="august" /> August
             <input type="radio" name="entry" value="november" /> November
         </fieldset>
-        <label> <input type="checkbox" name="checkbox" value="truth"/> 
-            Confirm that you are not lying and really are 
+        <label> <input type="checkbox" name="checkbox" value="truth" />
+            Confirm that you are not lying and really are
             only looking up your own grade</label>
-        <br /> 
+        <br />
         <br />
         Get Grade! <input type="submit" value="submit">
     </form>
 </body>
+
 </html>
