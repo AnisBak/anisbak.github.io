@@ -46,7 +46,7 @@ var spaceX;
 
 				this.style.textDecoration = "underline"; //underlines the number of the puzzle piece piece
 
-                this.style.backgroundImage="url('https://s-media-cache-ak0.pinimg.com/564x/83/72/12/837212dd8b71f9b5d175ac98f2c7668a.jpg')"; 
+                this.style.backgroundImage="url('background.jpg')"; 
                 //sets the image for the puzzle's background 
 
 			}
@@ -259,7 +259,7 @@ function Notify() //notifies the user
 
 		var body = document.getElementsByTagName('body'); 
 
-	    body[0].style.backgroundImage= "url('http://assets.pokemon.com/assets/cms2/img/video-games/video-games/pokemon_go/boxart.jpg')";
+	    body[0].style.backgroundImage= "url('background.jpg')";
 	    //sets background pic to show user that they had completed the puzzle
 		
 	}
@@ -276,7 +276,7 @@ function win() //notifies user that they have won
 	var body = document.getElementsByTagName('body');
 
 	
-	body[0].style.backgroundImage= "url('http://assets.pokemon.com/assets/cms2/img/video-games/video-games/pokemon_go/boxart.jpg')";
+	body[0].style.backgroundImage= "url('background.jpg')";
 
 	notify = 10; //initializes notify variable
 
